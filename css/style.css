@@ -2,12 +2,11 @@
     margin:0;
     box-sizing: border-box;
 }
-
+/* all the main parts of the layout have the same properties */
 .section{
     width: 60%;
     margin:auto;
     margin-top:20px;
-    
 }
 
 .head{
@@ -16,15 +15,19 @@
     margin-top:10px;
 }
 
-
-
 .first-main{
     height: 400px;
     background-color: hsl(54deg 63% 68%);
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
 .second-main{
-    
     background-color: hsl(208deg 100% 50%);
 }
 
@@ -41,15 +44,12 @@
     background-color:hsl(204deg 56% 79%);
     margin-bottom:20px;
 }
-.left-part{
+.part{
     width: 23%;
     height: 400px;
     background-color:hsl(204deg 56% 79%);   
     float: left;
     margin-bottom:20px;
-    
-
-
 }
 
 .central-part{
@@ -61,18 +61,12 @@
     margin-left:2%;
 }
 
-.right-part{
-    width: 23%;
-    height: 400px;
-    background-color:hsl(204deg 56% 79%);   
-    float: left;
-    margin-bottom:20px;
+.right{
     margin-left:2%;
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+/* .left{
+    
+} */
+
 
