@@ -10,13 +10,13 @@
     
 }
 
-
-
 .head{
-    height: 100px;
+    height: 150px;
     background-color:hsl(299deg 69% 69%);
     margin-top:10px;
 }
+
+
 
 .first-main{
     height: 400px;
@@ -24,15 +24,55 @@
 }
 
 .second-main{
-    height: 400px;
+    
     background-color: hsl(208deg 100% 50%);
 }
 
 .foot {
-    height: 50px;
+    height: 75px;
     background-color:hsl(272deg 99% 50%); 
     margin-top:10px;
     margin-bottom:20px;
 }
 
+.head-part{
+    width: 100%;
+    height: 100px;
+    background-color:hsl(204deg 56% 79%);
+    margin-bottom:20px;
+}
+.left-part{
+    width: 23%;
+    height: 400px;
+    background-color:hsl(204deg 56% 79%);   
+    float: left;
+    margin-bottom:20px;
+    
+
+
+}
+
+.central-part{
+    width: 50%;
+    height: 400px;
+    background-color:hsl(204deg 56% 79%);   
+    float: left;
+    margin-bottom:20px;
+    margin-left:2%;
+}
+
+.right-part{
+    width: 23%;
+    height: 400px;
+    background-color:hsl(204deg 56% 79%);   
+    float: left;
+    margin-bottom:20px;
+    margin-left:2%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
